@@ -1,0 +1,29 @@
+<h1>Enunciado</h1>
+<ul>
+    <li>Crear Modulo gameofthrone</li>
+
+    <li>En app.component.html Crear Botones y utilice el RouterLink para acceder a las rutas de los nuevos módulos
+        creados
+        Crear un Servicio Game Of Throne</li>
+
+    <li>Cree una llamada utilizando el siguiente endpoint de la API https://thronesapi.com/api/v2/Characters</li>
+
+    <li>Con esa llamada usted deberá Listar en su componente el Nombre completo del personaje y su titulo (fullName,
+        tittle)</li>
+
+</ul>
+<h1>Respuesta Got</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Título</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let got of gotData">
+            <td>{{ got.firstName }}</td>
+            <td>{{ got.title }}</td>
+        </tr>
+    </tbody>
+</table>

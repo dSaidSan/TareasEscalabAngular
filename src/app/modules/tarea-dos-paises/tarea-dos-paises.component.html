@@ -1,0 +1,28 @@
+<h1>Enunciado</h1>
+<ul>
+    <li>Crear Modulo Paises</li>
+
+    <li>En app.component.html Crear Botones y utilice el RouterLink para acceder a las rutas de los nuevos módulos
+        creados</li>
+
+    <li>Crear un Servicio Paises</li>
+
+    <li>Cree una llamada utilizando el siguiente endpoint de la API https://restcountries.com/v2/lang/es</li>
+
+    <li>Con esa llamada usted deberá Listar en su componente el Nombre del pais y su capital (name, capital)</li>
+</ul>
+<h1>Respuesta Paises</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Capital</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pais of paisesData">
+            <td>{{ pais.name }}</td>
+            <td>{{ pais.capital }}</td>
+        </tr>
+    </tbody>
+</table>
